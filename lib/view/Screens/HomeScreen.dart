@@ -15,6 +15,7 @@ class _HomeScreenState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurpleAccent,
         centerTitle: true,
         title: const Text(
           'TODO',
@@ -54,7 +55,12 @@ class _HomeScreenState extends State {
                       num1.clear();
                     });
                   },
-                  child: Text('Add', style: TextStyle(fontSize: 20.0)),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purpleAccent),
+                  child: Text(
+                    'Add',
+                    style: TextStyle(fontSize: 20.0),
+                  ),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -63,6 +69,8 @@ class _HomeScreenState extends State {
                       num1.clear();
                     });
                   },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purpleAccent),
                   child: Text('Clear', style: TextStyle(fontSize: 20.0)),
                 ),
               ],
